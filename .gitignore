@@ -1,0 +1,3 @@
+# Ignore GHSPack project and build artifacts
+GhsPack/
+k200BS001.dwg

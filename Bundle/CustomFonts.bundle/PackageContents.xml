@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="AutoCAD" ProductType="Application" Name="Autolisp Testing" Description="A sample app to test Autolisp scripts" Author="Autodesk, Inc." ProductCode="48535253-DE0F-45C2-8A1D-60D3F0E37EB4" UpgradeCode="DCEE22CC-E4CD-4770-9A0D-3010C0C8BE9E" AppVersion="1.0.0">
+    <CompanyDetails Name="Autodesk, Inc." Phone="" Url="http://www.autodesk.com" Email="">
+    </CompanyDetails>
+    <Components>
+        <!--This is an example to show how you can concatenate multiple support paths-->
+        <RuntimeRequirements SupportPath="./Contents;./Contents/Fonts" OS="Win64" Platform="AutoCAD" SeriesMin="R25.0" SeriesMax="R25.1"/>
+        <!--This an example to show how you can add multiple LISP files-->
+        <ComponentEntry ModuleName="./Contents/CallPlot.lsp" AppDescription="Lisp file to plot"/>
+        <ComponentEntry ModuleName="./Contents/fontStyle.lsp" AppDescription="Lisp file to substitute font styles"/>
+    </Components>
+</ApplicationPackage>

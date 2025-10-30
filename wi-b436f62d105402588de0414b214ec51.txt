@@ -1,0 +1,105 @@
+[10/30/2025 16:16:55] Job information:
+{
+  "CommandLine": [
+    "$(engine.path)\\accoreconsole.exe /i \"$(args[Input].path)\" /al \"$(appbundles[CustomFonts].path)\" /s \"$(settings[script].path)\""
+  ],
+  "Settings": {
+    "script": {
+      "value": "(load \"fontStyle.lsp\")\nSUBST\n(load \"CallPlot.lsp\")\nCallPlot\n"
+    },
+    "dasOpenNetwork": {
+      "value": "true",
+      "isEnvironmentVariable": true
+    }
+  },
+  "Id": "2b436f62d105402588de0414b214ec51",
+  "ActivityId": "apsapps.customfontsactivity+prod",
+  "EngineId": "Autodesk.AutoCAD_25_1!44",
+  "Apps": [
+    "apsapps.CustomFonts!1"
+  ],
+  "BoundArguments": {
+    "Input": {
+      "localName": "input.dwg",
+      "url": "https://cdn.us.oss.api.autodesk.com/Masked:3bi7XaW4B0Hdu0ibTMzZdbm7ra8=",
+      "verb": "get"
+    },
+    "Output": {
+      "localName": "input.pdf",
+      "url": "https://cdn.us.oss.api.autodesk.com/Masked:NRr1dla8eBCBAdI+7+RjykRFnDg=",
+      "verb": "put"
+    }
+  },
+  "Quotas": {
+    "limitProcessingTimeSec": 3600,
+    "limitTotalUncompressedAppsSizeInMB": 500
+  }
+}
+[10/30/2025 16:16:55] Starting work item 2b436f62d105402588de0414b214ec51
+[10/30/2025 16:16:55] Start download phase.
+[10/30/2025 16:16:55] Start downloading input: verb - 'Get', url - 'https://cdn.us.oss.api.autodesk.com/oss/v2/signedresources/5ea86631-8596-4d83-93ef-ead5fc39dc04?region=US'
+[10/30/2025 16:16:55] End downloading file. Source=https://cdn.us.oss.api.autodesk.com/oss/v2/signedresources/5ea86631-8596-4d83-93ef-ead5fc39dc04?region=US,LocalFile=C:\DARoot\Jobs\2b436f62d105402588de0414b214ec51\input.dwg,BytesDownloaded=49112,Duration=154ms
+[10/30/2025 16:16:55] End download phase successfully.
+[10/30/2025 16:16:55] Start preparing script and command line parameters.
+[10/30/2025 16:16:55] Command line: [ /i "C:\DARoot\Jobs\2b436f62d105402588de0414b214ec51\input.dwg" /al "C:\DARoot\Applications\b7f4d2d9f53f61fbd870aeef04435570.apsapps.CustomFonts[1].package" /s "C:\DARoot\Jobs\2b436f62d105402588de0414b214ec51\setting_script.scr"]
+[10/30/2025 16:16:55] End preparing script and command line parameters.
+[10/30/2025 16:16:55] Start script phase.
+[10/30/2025 16:16:55] Start AutoCAD Core Engine standard output dump.
+[10/30/2025 16:16:55] Redirect stdout (file: C:\DARoot\Jobs\2b436f62d105402588de0414b214ec51\tmp\accc44522).
+[10/30/2025 16:16:55] AcCoreConsole: StdOutConsoleMode: processed-output: disabled,auto
+[10/30/2025 16:16:55] AutoCAD Core Engine Console - Copyright 2025 Autodesk, Inc.  All rights reserved. (W.60.Z.79)
+[10/30/2025 16:16:55] Execution Path:
+[10/30/2025 16:16:55] C:\DARoot\AcesRoot\25.1\coreEngine\Exe\accoreconsole.exe
+[10/30/2025 16:16:55] Current Directory: C:\DARoot\Jobs\2b436f62d105402588de0414b214ec51
+[10/30/2025 16:16:55] CER Report Directory: C:\DARoot\Jobs\2b436f62d105402588de0414b214ec51\ErrorReports
+[10/30/2025 16:16:55] Isolating to regkey=HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_2b436f62d105402588de0414b214ec51, userDataFolder=C:\DARoot\Jobs\2b436f62d105402588de0414b214ec51\userdata.
+[10/30/2025 16:16:55] INFO: Isolation create time: 150 ms.
+[10/30/2025 16:16:55] Version Number: W.60.Z.79 (UNICODE)
+[10/30/2025 16:16:55] LogFilePath has been set to the working folder.
+[10/30/2025 16:16:56] Regenerating model.
+[10/30/2025 16:16:56] AutoCAD menu utilities loaded.
+[10/30/2025 16:16:56] Command:
+[10/30/2025 16:16:56] Command:
+[10/30/2025 16:16:56] Command:
+[10/30/2025 16:16:56] Command: (load "fontStyle.lsp")
+[10/30/2025 16:16:56] C:SUBST
+[10/30/2025 16:16:56] Command: SUBST
+[10/30/2025 16:16:56] _ZOOM
+[10/30/2025 16:16:56] Specify corner of window, enter a scale factor (nX or nXP), or
+[10/30/2025 16:16:56] [All/Center/Dynamic/Extents/Previous/Scale/Window/Object] <real time>: E
+[10/30/2025 16:16:56] Command:
+[10/30/2025 16:16:56] [Complete: KOREAN_STYLE created and substituted]
+[10/30/2025 16:16:56] Command: (load "CallPlot.lsp")
+[10/30/2025 16:16:56] C:CALLPLOT
+[10/30/2025 16:16:56] Command: CallPlot
+[10/30/2025 16:16:56] _ZOOM
+[10/30/2025 16:16:56] Specify corner of window, enter a scale factor (nX or nXP), or
+[10/30/2025 16:16:56] [All/Center/Dynamic/Extents/Previous/Scale/Window/Object] <real time>: E
+[10/30/2025 16:16:56] Command: -PLOT Detailed plot configuration? [Yes/No] <No>: Y
+[10/30/2025 16:16:56] Enter a layout name or [?] <Model>: Model Enter an output device name or [?] <None>: AutoCAD PDF (Web and Mobile).pc3 Enter paper size or [?] <ANSI A (11.00 x 8.50 Inches)>: ISO_full_bleed_A3_(420.00_x_297.00_MM) Enter paper units [Inches/Millimeters] <Millimeters>: M Enter drawing orientation [Portrait/Landscape] <Landscape>: L Plot upside down? [Yes/No] <No>: N Enter plot area [Display/Extents/Limits/View/Window] <Display>: Extents Enter plot scale (Plotted Millimeters=Drawing Units) or [Fit] <Fit>: Fit Enter plot offset (x,y) or [Center] <11.55,-13.65>: Center Plot with plot styles? [Yes/No] <Yes>: Y Enter plot style table name or [?] (enter . for none) <>: monochrome.ctb Plot with lineweights? [Yes/No] <Yes>: Y Enter shade plot setting [As displayed/legacy Wireframe/legacy Hidden/Visual styles/Rendered] <As displayed>: A
+[10/30/2025 16:16:57] Enter file name <C:\DARoot\Jobs\2b436f62d105402588de0414b214ec51\input-Model.pdf>: input.pdf Save changes to page setup [Yes/No]? <N> N Proceed with plot [Yes/No] <Y>: Y Effective plotting area:  420.00 wide by 167.90 high
+[10/30/2025 16:16:57] Plotting viewport 2.
+[10/30/2025 16:16:57] Command:
+[10/30/2025 16:16:58] End AutoCAD Core Engine standard output dump.
+[10/30/2025 16:16:58] Error: AutoCAD Core Console output contains error(s).
+[10/30/2025 16:16:58] End script phase.
+[10/30/2025 16:16:58] Start upload phase.
+[10/30/2025 16:16:58] Uploading 'C:\DARoot\Jobs\2b436f62d105402588de0414b214ec51\input.pdf': verb - 'Put', url - 'https://cdn.us.oss.api.autodesk.com/oss/v2/signedresources/2fa01bb7-8437-455c-9036-9d458d95bddf?region=US'
+[10/30/2025 16:16:58] End upload phase successfully.
+[10/30/2025 16:16:59] Job finished with result Succeeded
+[10/30/2025 16:16:59] Job Status:
+{
+  "status": "success",
+  "reportUrl": "https://dasprod-store.s3.amazonaws.com/workItem/apsapps/2b436f62d105402588de0414b214ec51/report?X-Amz-Expires=8100&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDcaCXVzLWVhc3QtMSJGMEQCIHwzg86MQmjBDiK1dumWKZviQrGbEmFhkC4ujgIGtjZ7AiB3Uw24Cvf5DTDPbajwwefbJxn87c6DNAWSrqsNf5V2lSqJAwjw%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAQaDDIyMDQ3MzE1MjMxMCIMHBhZoW%2F%2BnkOZuCb4Kt0Cwrv%2FIj6%2FMoq79tTeEX0xGEZc2z2Jdxaqr%2F5aQtrNIgJUoA9hNadGhWUlLsU2XD8MS1TDCAyYHDSrWWLKOV3lrqizja8QUt0qR5MtFKMA497dv%2BRM6duf3bogcZBpyu%2FlMeMhuei75TE3pvCwoA0eQkG1KbrMsQJT9IYuZH9kuPhZeou%2BWx1LIsCTHm9vA3v1b7f5SlEjbsDDw%2BJWyPLxW7kz6VBh5Od3TKDuZRQgw5wWPDbalE0ofTBLfdxWA%2F4XdQaGW9qnUa1BsOwg4LW3sPkbQiQpveJ92HviVK%2B7XCx3w7gxxGma6l6AZUs6i9%2BvFGe4gVrQG97LuFmzcYYAci1j6io7iT9IXxx73GQrW%2F0QRwuLlf7t2HBNAsbfwhTnypUKyJYutSECcXlE2OGE8dVOr7iLUNUXSuAbOdEqqNeq4jmWxbvENDDztGXQ6aKz8JmjnfAevaXK8fpbSzDy%2Bo3IBjqfAaz8khLESxmpyrfaW4AxS4Sle3Xz4VbaNAf%2BR9Oz8eTkL3F%2B0D7TArvMEV75G87DgiGBNfxBjc12UFXrJUvRnGgJxUxv3gHZjHUzMOkv4HR87cTQZBDc0gD2DZ4Px4H2IhYE7IXll7xdcSfVRdu1daYP3vkFDIRf%2FW%2B8McfLKdcO2H0i7zi2k2%2Bs45xs2%2FQc6q5%2FsJ%2BJlOqOAqngyuUFgQ%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIATGVJZKM3FBY7OPPA%2F20251030%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251030T161655Z&X-Amz-SignedHeaders=host&X-Amz-Signature=bab81db7167eb597249b4aa08ae193bf5adda08f84c6ba9de5636a4ff3b78da0",
+  "activityId": "apsapps.customfontsactivity+prod",
+  "stats": {
+    "timeQueued": "2025-10-30T16:16:55.0094614Z",
+    "timeDownloadStarted": "2025-10-30T16:16:55.1204429Z",
+    "timeInstructionsStarted": "2025-10-30T16:16:55.3670453Z",
+    "timeInstructionsEnded": "2025-10-30T16:16:58.4350035Z",
+    "timeUploadEnded": "2025-10-30T16:16:58.9343521Z",
+    "bytesDownloaded": 49112,
+    "bytesUploaded": 184142
+  },
+  "id": "2b436f62d105402588de0414b214ec51"
+}
