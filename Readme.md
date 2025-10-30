@@ -101,11 +101,11 @@ APS Automation will process the drawing and apply the custom fonts as specified 
 
 ### Input DWG
 
-![input-dwg](input-dwg.png)
+![input-dwg](input_dwg.png)
 
 ### Output PDF
 
-![output-pdf](output-pdf.png)
+![output-pdf](output_pdf.png)
 
 ## Notes
 
