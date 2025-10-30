@@ -34,13 +34,13 @@ Some parts of LISP code are adapted from same stackoverflow question.
 
 ### In APS Design Automation
 
-1. Upload the `CustomFonts.bundle` to your APS storage location.
-2. Reference the bundle in your Design Automation workitem or activity.
-3. Ensure your automation script or LISP routine loads the fonts from the bundle path (see `CallPlot.lsp` and `fontStyle.lsp` for examples).
+1. Upload the `CustomFonts.bundle` to your APS Automation server.
+2. Reference the bundle in your Design Automation activity.
+3. Ensure your automation loads the fonts from the bundle support path (see `PackageContents.xml`).
 
 ### In Local AutoCAD
 
-1. Copy the SHX font files from `Bundle/CustomFonts.bundle/Contents/Fonts/` to your AutoCAD Fonts directory.
+1. Copy the SHX font files from `Bundle/CustomFonts.bundle/Contents/Fonts/` to your AutoCAD Fonts directory or AutoCAD Support file path.
 2. Load the LISP routines in AutoCAD to test font usage in your drawings.
 
 ## APS Design Automation Sample Activity and Workitem
